@@ -11,6 +11,10 @@ class Artist
     super
     @songs = []
   end
+  
+  def artist(artist)
+    @artist = artist
+  end
 
   def self.find_by_name(name)
     @@artists.detect{|a| a.name == name}
